@@ -456,31 +456,11 @@
 	status = "disabled";
 };
 
-&pwm12 {
-	/* pin 21 of header con2 */
-	/* shared with uart9 + spi3 */
-	pinctrl-0 = <&pwm12m1_pins>;
-	status = "disabled";
-};
 
 &pwm13 {
 	/* pin 24 of header con2 */
 	/* shared with uart9 */
 	pinctrl-0 = <&pwm13m1_pins>;
-	status = "disabled";
-};
-
-&pwm14 {
-	/* pin 23 of header con2 */
-	/* shared with spi3 */
-	pinctrl-0 = <&pwm14m1_pins>;
-	status = "disabled";
-};
-
-&pwm15 {
-	/* pin 19 of header con2 */
-	/* shared with spi3 */
-	pinctrl-0 = <&pwm15m1_pins>;
 	status = "disabled";
 };
 
@@ -515,13 +495,6 @@
 	status = "okay";
 };
 
-&spi3 {
-	/* pin 19 (MO) + 21 (MI) + 23 (CK) of header con2 */
-	/* shared with pwm12/14/15 and uart9 */
-	pinctrl-0 = <&spi3m1_pins>;
-	status = "disabled";
-};
-
 &tsadc {
 	status = "okay";
 };
@@ -542,13 +515,6 @@
 	status = "disabled";
 };
 
-&uart9 {
-	/* pin 21 (TX) + 24 (RX) of header con2 */
-	/* shared with pwm13 and pwm12/spi3 */
-	pinctrl-0 = <&uart9m1_xfer>;
-	status = "disabled";
-};
-
 &usb_host0_ehci {
 	status = "okay";
 };
@@ -557,33 +523,10 @@
 	status = "okay";
 };
 
-&usb_host0_xhci {
-	extcon = <&usb2phy0>;
-	status = "okay";
-};
-
 &usb_host1_ehci {
 	status = "okay";
 };
 
 &usb_host1_ohci {
-	status = "okay";
-};
-
-&usb_host1_xhci {
-	status = "okay";
-};
-
-&usb2phy0 {
-	status = "okay";
-};
-
-&usb2phy0_host {
-	phy-supply = <&vcc5v0_usb_host>;
-	status = "okay";
-};
-
-&usb2phy0_otg {
-	phy-supply = <&vcc5v0_usb_otg>;
 	status = "okay";
 };
