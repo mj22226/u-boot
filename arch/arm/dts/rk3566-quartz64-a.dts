@@ -1,0 +1,9 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+
+/dts-v1/;
+#include "rk3568-evb.dts"
+
+/ {
+	model = "Pine64 RK3566 Quartz64-A Board";
+	compatible = "pine64,quartz64-a", "rockchip,rk3566";
+};
