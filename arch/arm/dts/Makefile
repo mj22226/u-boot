@@ -165,6 +165,7 @@ dtb-$(CONFIG_ROCKCHIP_RK3399) += \
 	rk3399pro-rock-pi-n10.dtb
 
 dtb-$(CONFIG_ROCKCHIP_RK3568) += \
+	rk3568-bpi-r2-pro.dtb \
 	rk3568-evb.dtb \
 	rk3568-nanopi-r5s.dtb \
 	rk3566-radxa-cm3-io.dtb \
