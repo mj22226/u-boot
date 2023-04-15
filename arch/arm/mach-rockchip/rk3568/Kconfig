@@ -1,5 +1,10 @@
 if ROCKCHIP_RK3568
 
+config TARGET_BPI_R2_PRO_RK3568
+	bool "Banana Pi R2 Pro RK3566 development board"
+	help
+	  Banana Pi R2 Pro is a development board Rockchp RK3568.
+
 config TARGET_EVB_RK3568
 	bool "RK3568 evaluation board"
 	select BOARD_LATE_INIT
@@ -23,6 +28,7 @@ config SYS_SOC
 config SYS_MALLOC_F_LEN
 	default 0x2000
 
+source "board/rockchip/bpi-r2-pro-rk3568/Kconfig"
 source "board/rockchip/evb_rk3568/Kconfig"
 source "board/friendlyelec/nanopi-r5s-rk3568/Kconfig"
 

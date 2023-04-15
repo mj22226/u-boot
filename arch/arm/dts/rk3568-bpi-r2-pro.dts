@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * Author: Frank Wunderlich <frank-w@public-files.de>
+ *
+ */
+
+/dts-v1/;
+#include "rk3568-evb.dts"
+
+/ {
+	model = "Bananapi-R2 Pro (RK3568) DDR4 Board";
+	compatible = "rockchip,rk3568-bpi-r2pro", "rockchip,rk3568";
+};
