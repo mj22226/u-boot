@@ -1,0 +1,15 @@
+if TARGET_NANOPI_R5S_RK3568
+
+config SYS_BOARD
+	default "nanopi-r5s-rk3568"
+
+config SYS_VENDOR
+	default "friendlyelec"
+
+config SYS_CONFIG_NAME
+	default "nanopi-r5s-rk3568"
+
+config BOARD_SPECIFIC_OPTIONS # dummy
+	def_bool y
+
+endif
