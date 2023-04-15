@@ -16,6 +16,11 @@ config TARGET_NANOPI_R5S_RK3568
 	help
 	  NanoPi R5S FriendlyElec is a board for Rockchp RK3568.
 
+config TARGET_QUARTZ64_A_RK3566
+	bool "Quartz64 Model A RK3566 development board"
+	help
+	  Quartz64 Model A RK3566 is a development board from Pine64.
+
 config ROCKCHIP_BOOT_MODE_REG
 	default 0xfdc20200
 
@@ -31,5 +36,6 @@ config SYS_MALLOC_F_LEN
 source "board/rockchip/bpi-r2-pro-rk3568/Kconfig"
 source "board/rockchip/evb_rk3568/Kconfig"
 source "board/friendlyelec/nanopi-r5s-rk3568/Kconfig"
+source "board/pine64/quartz64-a-rk3566/Kconfig"
 
 endif
