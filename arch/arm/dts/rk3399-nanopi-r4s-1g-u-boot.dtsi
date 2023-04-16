@@ -1,0 +1,26 @@
+// SPDX-License-Identifier: GPL-2.0+
+
+#include "rk3399-nanopi4-u-boot.dtsi"
+#include "rk3399-sdram-ddr3-1866.dtsi"
+
+/ {
+	smbios {
+		compatible = "u-boot,sysinfo-smbios";
+
+		smbios {
+			system {
+				manufacturer = "FriendlyELEC";
+				product = "NanoPi R4S";
+			};
+
+			baseboard {
+				manufacturer = "FriendlyELEC";
+				product = "NanoPi R4S";
+			};
+
+			chassis {
+				manufacturer = "FriendlyELEC";
+			};
+		};
+	};
+};
