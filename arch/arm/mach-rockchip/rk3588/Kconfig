@@ -19,6 +19,12 @@ config TARGET_RK3588_NEU6
 	  IO board and Neu6a needs to mount on top of this IO board in order to
 	  create complete Edgeble Neural Compute Module 6(Neu6) IO platform.
 
+config TARGET_NANOPI_R6C_RK3588
+	bool "NanoPi R6C board"
+ 	select BOARD_LATE_INIT
+	help
+	  FriendlyElec NANOPI-R6C is a Rockchip RK3588 based SBC (Single Board Computer)
+
 config TARGET_ROCK5B_RK3588
 	bool "Radxa ROCK5B RK3588 board"
 	select BOARD_LATE_INIT
@@ -58,6 +64,7 @@ config SYS_MALLOC_F_LEN
 
 source board/edgeble/neural-compute-module-6/Kconfig
 source board/rockchip/evb_rk3588/Kconfig
+source board/friendlyelec/nanopi-r6c-rk3588/Kconfig
 source board/radxa/rock5b-rk3588/Kconfig
 
 endif
